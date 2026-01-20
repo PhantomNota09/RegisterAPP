@@ -37,6 +37,20 @@
 			);
 			target = 43E423C92F1FCEFB00B6D5BA /* RegisterAPP */;
 		};
+		43E424002F1FE28B00B6D5BA /* Exceptions for "RegisterAPPUITests" folder in "RegisterAPP" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				README.md,
+			);
+			target = 43E423C92F1FCEFB00B6D5BA /* RegisterAPP */;
+		};
+		43E424012F1FE28B00B6D5BA /* Exceptions for "RegisterAPPUITests" folder in "RegisterAPPUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				README.md,
+			);
+			target = 43E423E92F1FCEFD00B6D5BA /* RegisterAPPUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -55,6 +69,10 @@
 		};
 		43E423ED2F1FCEFD00B6D5BA /* RegisterAPPUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				43E424002F1FE28B00B6D5BA /* Exceptions for "RegisterAPPUITests" folder in "RegisterAPP" target */,
+				43E424012F1FE28B00B6D5BA /* Exceptions for "RegisterAPPUITests" folder in "RegisterAPPUITests" target */,
+			);
 			path = RegisterAPPUITests;
 			sourceTree = "<group>";
 		};
