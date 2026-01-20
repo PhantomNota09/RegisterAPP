@@ -12,7 +12,7 @@ RegisterAPP is an iOS application designed for user registration functionality. 
 - Scene-based lifecycle management
 - Clean architecture with proper delegation patterns
 
-## Screenshot
+## Screenshots
 
 <img width="120" height="262" alt="simulator_screenshot_8E30089B-151D-41E0-A8E1-6095B4FBF857" src="https://github.com/user-attachments/assets/e17a8aff-fbc8-4e9b-8089-8f3f5cf6c081" />
 <img width="120" height="262" alt="simulator_screenshot_F5D0C281-AEFC-4476-8ABD-473FB5FEA0C8" src="https://github.com/user-attachments/assets/41902117-a12a-4e33-958b-3f28366cb77a" />
