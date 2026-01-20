@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--InfoVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RegisterAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InfoVC" customModule="RegisterAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
-                                    <segue destination="D5a-YE-NQN" kind="push" id="Hak-ni-cap"/>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pe6-f5-aee"/>
+                                    <segue destination="D5a-YE-NQN" kind="push" id="UGw-UK-nK6"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Select Country" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9JR-XJ-7fh">
@@ -87,6 +88,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="cP9-It-vba"/>
+                    <connections>
+                        <outlet property="countryCodeTF" destination="0sK-mD-Fzb" id="9Bz-Rf-CRx"/>
+                        <outlet property="countryInputTF" destination="9JR-XJ-7fh" id="324-hE-6Cp"/>
+                        <outlet property="phoneNumberTF" destination="Jn4-tJ-LGk" id="57S-WU-oDc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="960" y="769"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="91G-tL-nwT">
             <objects>
-                <viewController id="D5a-YE-NQN" sceneMemberID="viewController">
+                <viewController id="D5a-YE-NQN" customClass="SignUpVC" customModule="RegisterAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ne9-hq-eaj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +160,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                 <connections>
-                                    <segue destination="xg9-NY-1Xa" kind="push" id="4tP-KQ-jdD"/>
+                                    <action selector="signUpButton:" destination="D5a-YE-NQN" eventType="touchUpInside" id="2G5-d3-rrV"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your full name" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-LK-hdc">
@@ -250,6 +256,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="CHg-2n-oAQ"/>
+                    <connections>
+                        <outlet property="confirmPasswordTF" destination="Y5D-jF-UXb" id="k1l-FT-Eaa"/>
+                        <outlet property="emailTF" destination="HBK-YE-tV6" id="YXh-Ku-2Mx"/>
+                        <outlet property="nameTF" destination="dyc-LK-hdc" id="Oms-aH-xIB"/>
+                        <outlet property="passwordTF" destination="ebf-pp-otj" id="ipn-sf-T87"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqa-rc-iOP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -335,12 +347,12 @@
             </objects>
             <point key="canvasLocation" x="1747.3282442748091" y="62.676056338028175"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="Lqb-yF-Ba3">
             <objects>
-                <viewController id="B3n-TD-OyS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="B3n-TD-OyS" customClass="HomeVC" customModule="RegisterAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UQV-aa-qM7">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbd-KU-9jo">
