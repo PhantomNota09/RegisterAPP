@@ -15,6 +15,8 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var confirmPasswordTF: UITextField!
     
+    var objSignUpWebService: LoginResponse? = nil
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +32,7 @@ class SignUpVC: UIViewController {
             return
         }
         
+        objSignUpWebService = callSignUpWebService()
         navigateToHome()
     }
     
@@ -89,8 +92,13 @@ class SignUpVC: UIViewController {
     }
     
     func navigateToHome() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as? HomeVC
-        if let homeVC = vc { self.navigationController?.pushViewController(homeVC, animated: true)
+        let vc = UIStoryboard(name: "Main", bundle: nil)
+        let objNextVC = vc.instantiateViewController(withIdentifier: "HomeVC") as? HomeVC
+        
+        objNextVC?.receivedLoginResponse = objSignUpWebService
+        
+        if let homeVC = objNextVC {
+            self.navigationController?.pushViewController(homeVC, animated: true)
         }
     }
 }
@@ -133,5 +141,15 @@ extension SignUpVC: UITextFieldDelegate {
         }
         
         return updatedText.count <= 30
+    }
+}
+
+// MARK: Service Method
+
+extension SignUpVC {
+    func callSignUpWebService() -> LoginResponse? {
+        let response = LoginResponse(loggedInUserId: "12345", loggedInUserName: nameTF.text ?? "", loggedInUserEmail: emailTF.text ?? "", token: "ewnipwnnwn23432", profileImage: "https://via.placeholder.com/150")
+                                    
+        return response
     }
 }
