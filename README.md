@@ -14,6 +14,11 @@ RegisterAPP is an iOS application designed for user registration functionality. 
 
 ## Screenshots
 
-<img width="120" height="262" alt="simulator_screenshot_8E30089B-151D-41E0-A8E1-6095B4FBF857" src="https://github.com/user-attachments/assets/e17a8aff-fbc8-4e9b-8089-8f3f5cf6c081" />
-<img width="120" height="262" alt="simulator_screenshot_F5D0C281-AEFC-4476-8ABD-473FB5FEA0C8" src="https://github.com/user-attachments/assets/41902117-a12a-4e33-958b-3f28366cb77a" />
-<img width="120" height="262" alt="simulator_screenshot_06262E2A-1576-47B7-9ED9-FB45AB79FF0B" src="https://github.com/user-attachments/assets/5d655737-2450-49bd-a1ef-87140fc64643" />
+<img width="120" height="262" alt="simulator_screenshot_DE153321-9513-4D4B-BE67-A2C33C7C5DE8" src="https://github.com/user-attachments/assets/d4731db9-5a05-4a7d-b0b0-5effe8d28257" />
+<img width="120" height="262" alt="simulator_screenshot_5A8AC193-D344-4CBF-806B-3DA9E3919BB3" src="https://github.com/user-attachments/assets/2c8952d5-75f1-4d66-99c3-f87f6c8cd17a" />
+<img width="120" height="262" alt="simulator_screenshot_7E6A04E2-4A52-4E19-9ED9-2A4A1427404B" src="https://github.com/user-attachments/assets/ee9adb13-6f3a-4e71-aa5c-7507755881f2" />
+<img width="120" height="262" alt="simulator_screenshot_83A907E9-B5EB-4CD7-B0C0-755F3ECFAD46" src="https://github.com/user-attachments/assets/f7c61932-6977-4652-8c11-42b5409fb19c" />
+<img width="120" height="262" alt="simulator_screenshot_69C8E2BF-4FA5-41B9-A554-14AA168999B7" src="https://github.com/user-attachments/assets/7db1df74-537a-46fa-92d7-997f30321d14" />
+<img width="120" height="262" alt="simulator_screenshot_21EBF712-5985-4637-9426-0B6A7EDD6535" src="https://github.com/user-attachments/assets/7056d280-d1f3-49dc-b631-5e5e46ee1273" />
+<img width="120" height="262" alt="simulator_screenshot_4BD0EB7B-01FD-4D23-B4D8-47501A1834BB" src="https://github.com/user-attachments/assets/24a6bdb3-9484-43f3-8ede-ad39a570ad75" />
+<img width="120" height="262" alt="simulator_screenshot_8C63ABA1-792F-4496-B563-97F1B2EA5F98" src="https://github.com/user-attachments/assets/62251c1d-1458-42bf-90a2-d8530e0f8659" />
